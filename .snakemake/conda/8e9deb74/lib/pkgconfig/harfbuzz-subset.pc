@@ -1,0 +1,12 @@
+prefix=/home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74
+exec_prefix=/home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74
+libdir=/home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/lib
+includedir=/home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/include
+
+Name: harfbuzz
+Description: HarfBuzz font subsetter
+Version: 2.4.0
+
+Requires: harfbuzz
+Libs: -L${libdir} -lharfbuzz-subset
+Cflags: -I${includedir}/harfbuzz

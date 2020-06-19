@@ -1,0 +1,31 @@
+==> 2020-06-15 14:40:32 <==
+# cmd: /usr/local/easybuild/software/Miniconda3/4.6.14/bin/conda-env create --file /home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79.yaml --prefix /home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79
+# conda version: 4.6.14
++bioconda::bcftools-1.9-h68d8f2e_9
++bioconda::htslib-1.9-h4da6232_3
++bioconda::samtools-1.9-h10a08f8_12
++conda-forge::_libgcc_mutex-0.1-conda_forge
++conda-forge::_openmp_mutex-4.5-1_llvm
++conda-forge::bzip2-1.0.8-h516909a_2
++conda-forge::ca-certificates-2020.4.5.2-hecda079_0
++conda-forge::curl-7.69.1-h33f0ec9_0
++conda-forge::gsl-2.5-h294904e_1
++conda-forge::krb5-1.17.1-h2fd8d38_0
++conda-forge::libblas-3.8.0-16_openblas
++conda-forge::libcblas-3.8.0-16_openblas
++conda-forge::libcurl-7.69.1-hf7181ac_0
++conda-forge::libdeflate-1.6-h516909a_0
++conda-forge::libedit-3.1.20191231-h46ee950_0
++conda-forge::libgcc-ng-9.2.0-h24d8f2e_2
++conda-forge::libgfortran-ng-7.5.0-hdf63c60_6
++conda-forge::libopenblas-0.3.9-h5ec1e0e_0
++conda-forge::libssh2-1.9.0-hab1572f_2
++conda-forge::libstdcxx-ng-9.2.0-hdf63c60_2
++conda-forge::llvm-openmp-10.0.0-hc9558a2_0
++conda-forge::ncurses-6.1-hf484d3e_1002
++conda-forge::openssl-1.1.1g-h516909a_0
++conda-forge::perl-5.26.2-h516909a_1006
++conda-forge::tk-8.6.10-hed695b0_0
++conda-forge::xz-5.2.5-h516909a_0
++conda-forge::zlib-1.2.11-h516909a_1006
+# update specs: ['bcftools=1.9', 'samtools=1.9']

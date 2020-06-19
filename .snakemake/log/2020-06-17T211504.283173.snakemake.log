@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules sort and map_reads are ambiguous for the file mapped/A.sorted.bam.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	sort: sample=A
+	map_reads: sample=A.sorted
+Expected input files:
+	sort: mapped/A.bam
+	map_reads: data/genome.fa data/samples/A.fastqExpected output files:
+	sort: mapped/A.sorted.bam
+	map_reads: mapped/A.sorted.bam

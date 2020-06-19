@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 14 of /home/kbobowik/snakemake-tutorial/SampleAggregation:
+Missing input files for rule sort:
+mapped/C.bam

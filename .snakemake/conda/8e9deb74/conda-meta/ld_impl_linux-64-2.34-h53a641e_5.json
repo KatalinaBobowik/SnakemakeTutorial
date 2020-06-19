@@ -1,0 +1,43 @@
+{
+  "build": "h53a641e_5",
+  "build_number": 5,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "sysroot_linux-64 ==99999999999"
+  ],
+  "depends": [],
+  "extracted_package_dir": "/home/kbobowik/.conda/pkgs/ld_impl_linux-64-2.34-h53a641e_5",
+  "features": "",
+  "files": [
+    "bin/x86_64-conda_cos6-linux-gnu-ld"
+  ],
+  "fn": "ld_impl_linux-64-2.34-h53a641e_5.tar.bz2",
+  "license": "GPL-3.0-only",
+  "license_family": "GPL",
+  "link": {
+    "source": "/home/kbobowik/.conda/pkgs/ld_impl_linux-64-2.34-h53a641e_5",
+    "type": 1
+  },
+  "md5": "779d37cc6aae25fe38a756f2bed3694f",
+  "name": "ld_impl_linux-64",
+  "package_tarball_full_path": "/home/kbobowik/.conda/pkgs/ld_impl_linux-64-2.34-h53a641e_5.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/x86_64-conda_cos6-linux-gnu-ld",
+        "path_type": "hardlink",
+        "sha256": "a964ce2a7967c9cdb77401c7cd0ca2c7a370a47d869b0784b7e9c97a533e0d4c",
+        "sha256_in_prefix": "a964ce2a7967c9cdb77401c7cd0ca2c7a370a47d869b0784b7e9c97a533e0d4c",
+        "size_in_bytes": 2525816
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 630736,
+  "subdir": "linux-64",
+  "timestamp": 1591632300481,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/ld_impl_linux-64-2.34-h53a641e_5.tar.bz2",
+  "version": "2.34"
+}

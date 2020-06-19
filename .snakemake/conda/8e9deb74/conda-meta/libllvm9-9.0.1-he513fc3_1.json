@@ -1,0 +1,61 @@
+{
+  "build": "he513fc3_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/home/kbobowik/.conda/pkgs/libllvm9-9.0.1-he513fc3_1",
+  "features": "",
+  "files": [
+    "lib/libLLVM-9.so",
+    "lib/libLTO.so.9",
+    "lib/libRemarks.so.9"
+  ],
+  "fn": "libllvm9-9.0.1-he513fc3_1.tar.bz2",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "link": {
+    "source": "/home/kbobowik/.conda/pkgs/libllvm9-9.0.1-he513fc3_1",
+    "type": 1
+  },
+  "md5": "951f6c6ea549253cb364ce734927766a",
+  "name": "libllvm9",
+  "package_tarball_full_path": "/home/kbobowik/.conda/pkgs/libllvm9-9.0.1-he513fc3_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libLLVM-9.so",
+        "path_type": "hardlink",
+        "sha256": "71b2f6b23953609a6aa7242616e5220a91f01c82dea514257e1815fdad3fc925",
+        "sha256_in_prefix": "71b2f6b23953609a6aa7242616e5220a91f01c82dea514257e1815fdad3fc925",
+        "size_in_bytes": 89322656
+      },
+      {
+        "_path": "lib/libLTO.so.9",
+        "path_type": "hardlink",
+        "sha256": "b3bd810209329af6c10f65efc4299c55acbecafaf4a35274d6134f3df0562bc9",
+        "sha256_in_prefix": "b3bd810209329af6c10f65efc4299c55acbecafaf4a35274d6134f3df0562bc9",
+        "size_in_bytes": 216968
+      },
+      {
+        "_path": "lib/libRemarks.so.9",
+        "path_type": "hardlink",
+        "sha256": "93bf33750e53e8fb4b5addb29753eb415e6abf83b1aef0ff76df615a0c0e746e",
+        "sha256_in_prefix": "93bf33750e53e8fb4b5addb29753eb415e6abf83b1aef0ff76df615a0c0e746e",
+        "size_in_bytes": 15856
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 26314112,
+  "subdir": "linux-64",
+  "timestamp": 1587163781216,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libllvm9-9.0.1-he513fc3_1.tar.bz2",
+  "version": "9.0.1"
+}

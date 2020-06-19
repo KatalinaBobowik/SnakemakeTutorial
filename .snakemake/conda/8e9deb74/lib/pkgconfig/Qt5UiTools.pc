@@ -1,0 +1,14 @@
+prefix=/home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 UiTools
+Description: Qt UiTools module
+Version: 5.12.5
+Libs: -L${libdir} -lQt5UiTools 
+Libs.private: -L/home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/lib -L/home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64 /home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/lib/libQt5Widgets.so /home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/lib/libQt5Gui.so /home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/lib/libQt5Core.so -lpthread /home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/lib/libQt5Widgets.so /home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/lib/libQt5Gui.so /home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/lib/libQt5Core.so /home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libGL.so   
+Cflags: -DQT_UITOOLS_LIB -I${includedir}/QtUiTools -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets
+

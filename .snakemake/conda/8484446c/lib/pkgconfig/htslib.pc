@@ -1,0 +1,15 @@
+includedir=/home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c/include
+libdir=/home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c/lib
+
+# Flags and libraries needed when linking against a static libhts.a
+# (used by manual and semi-manual pkg-config(1)-style enquiries).
+static_ldflags= -Wl,-rpath,/home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c/lib -L/home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c/lib -rdynamic
+static_libs=-lpthread -lz -lm -ldl -lbz2 -llzma -ldeflate
+
+Name: htslib
+Description: C library for high-throughput sequencing data formats
+Version: 1.9
+Cflags: -I${includedir}
+Libs: -L${libdir} -lhts
+Libs.private: -L${libdir}  -Wl,-rpath,/home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c/lib -L/home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c/lib -lbz2 -ldeflate -lhts -lm -lpthread
+Requires.private: zlib  liblzma

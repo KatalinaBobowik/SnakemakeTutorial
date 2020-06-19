@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	call
+	1
+
+[Fri Jun 19 10:11:58 2020]
+rule call:
+    input: data/genome.fa, mapped/A.sorted.bam, mapped/B.sorted.bam, mapped/C.sorted.bam
+    output: calls/all.vcf
+    jobid: 0
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79
+[Fri Jun 19 10:11:59 2020]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /home/kbobowik/snakemake-tutorial/.snakemake/log/2020-06-19T101158.304518.snakemake.log

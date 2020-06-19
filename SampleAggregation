@@ -1,0 +1,33 @@
+samples = ["A", "B", "C"]
+
+rule map_reads:
+	input:
+		"data/genome.fa",
+		"data/samples/{sample}.fastq"
+	output:
+		"mapped/{sample}.bam"
+	conda:
+		"envs/mapping.yaml"
+	shell:
+		"bwa mem {input} | samtools view -Sb - > {output}"
+
+rule sort:
+	input:
+		"mapped/{sample}.bam"
+	output:
+		"mapped/{sample}.sorted.bam"
+	conda:
+		"envs/mapping.yaml"
+	shell:
+		"samtools sort -o {output} {input}"
+
+rule call:
+	input:
+		genome="data/genome.fa",
+		bam=expand("mapped/{sample}.sorted.bam", sample=samples)
+	output:
+		"calls/all.vcf"
+	conda:
+		"envs/calling.yaml"
+	shell:
+		"samtools mpileup -g -f {input.genome} {input.bam} | bcftools call -mv - > {output}"

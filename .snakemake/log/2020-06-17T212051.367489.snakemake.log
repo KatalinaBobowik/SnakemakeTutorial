@@ -1,0 +1,46 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	call
+	1	map_reads
+	1	sort
+	3
+
+[Wed Jun 17 21:20:51 2020]
+rule map_reads:
+    input: data/genome.fa, data/samples/C.fastq
+    output: mapped/C.bam
+    jobid: 5
+    wildcards: sample=C
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063
+[Wed Jun 17 21:20:53 2020]
+Finished job 5.
+1 of 3 steps (33%) done
+
+[Wed Jun 17 21:20:53 2020]
+rule sort:
+    input: mapped/C.bam
+    output: mapped/C.sorted.bam
+    jobid: 2
+    wildcards: sample=C
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063
+[Wed Jun 17 21:20:53 2020]
+Finished job 2.
+2 of 3 steps (67%) done
+
+[Wed Jun 17 21:20:53 2020]
+rule call:
+    input: data/genome.fa, mapped/A.sorted.bam, mapped/B.sorted.bam, mapped/C.sorted.bam
+    output: calls/all.vcf
+    jobid: 0
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79
+[Wed Jun 17 21:20:54 2020]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /home/kbobowik/snakemake-tutorial/.snakemake/log/2020-06-17T212051.367489.snakemake.log

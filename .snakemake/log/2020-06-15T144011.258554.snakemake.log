@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Creating conda environment envs/calling.yaml...
+Downloading remote packages.
+Environment for envs/calling.yaml created (location: .snakemake/conda/e306fa79)
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	call
+	1
+
+[Mon Jun 15 14:40:34 2020]
+rule call:
+    input: data/genome.fa, mapped/A.sorted.bam, mapped/B.sorted.bam, mapped/C.sorted.bam
+    output: calls/all.vcf
+    jobid: 0
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79
+[Mon Jun 15 14:40:35 2020]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /home/kbobowik/snakemake-tutorial/.snakemake/log/2020-06-15T144011.258554.snakemake.log

@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Creating conda environment envs/stats.yaml...
+Downloading remote packages.
+Environment for envs/stats.yaml created (location: .snakemake/conda/8e9deb74)
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	plot_qual
+	2
+
+[Wed Jun 17 21:36:21 2020]
+rule plot_qual:
+    input: calls/all.vcf
+    output: plots/quals.svg
+    jobid: 1
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/8e9deb74
+[Wed Jun 17 21:36:27 2020]
+Finished job 1.
+1 of 2 steps (50%) done
+
+[Wed Jun 17 21:36:27 2020]
+localrule all:
+    input: calls/all.vcf, plots/quals.svg
+    jobid: 0
+
+[Wed Jun 17 21:36:27 2020]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /home/kbobowik/snakemake-tutorial/.snakemake/log/2020-06-17T213319.861213.snakemake.log

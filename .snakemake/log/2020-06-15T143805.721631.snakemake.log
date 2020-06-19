@@ -1,0 +1,85 @@
+Building DAG of jobs...
+Creating conda environment envs/calling.yaml...
+Downloading remote packages.
+Environment for envs/calling.yaml created (location: .snakemake/conda/8484446c)
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	call
+	2	map_reads
+	2	sort
+	5
+
+[Mon Jun 15 14:38:32 2020]
+rule map_reads:
+    input: data/genome.fa, data/samples/C.fastq
+    output: mapped/C.bam
+    jobid: 4
+    wildcards: sample=C
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063
+[Mon Jun 15 14:38:35 2020]
+Finished job 4.
+1 of 5 steps (20%) done
+
+[Mon Jun 15 14:38:35 2020]
+rule map_reads:
+    input: data/genome.fa, data/samples/B.fastq
+    output: mapped/B.bam
+    jobid: 6
+    wildcards: sample=B
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063
+[Mon Jun 15 14:38:36 2020]
+Finished job 6.
+2 of 5 steps (40%) done
+
+[Mon Jun 15 14:38:36 2020]
+rule sort:
+    input: mapped/C.bam
+    output: mapped/C.sorted.bam
+    jobid: 1
+    wildcards: sample=C
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063
+[Mon Jun 15 14:38:37 2020]
+Finished job 1.
+3 of 5 steps (60%) done
+
+[Mon Jun 15 14:38:37 2020]
+rule sort:
+    input: mapped/B.bam
+    output: mapped/B.sorted.bam
+    jobid: 3
+    wildcards: sample=B
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063
+[Mon Jun 15 14:38:37 2020]
+Finished job 3.
+4 of 5 steps (80%) done
+
+[Mon Jun 15 14:38:37 2020]
+rule call:
+    input: data/genome.fa, mapped/A.sorted.bam, mapped/B.sorted.bam, mapped/C.sorted.bam
+    output: calls/all.vcf
+    jobid: 0
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c
+[Mon Jun 15 14:38:38 2020]
+Error in rule call:
+    jobid: 0
+    output: calls/all.vcf
+    conda-env: /home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c
+
+RuleException:
+CalledProcessError in line 33 of /home/kbobowik/snakemake-tutorial/SampleAggregation:
+Command 'source activate /home/kbobowik/snakemake-tutorial/.snakemake/conda/8484446c; set -euo pipefail;  samtools mpileup -g -f data/genome.fa mapped/A.sorted.bam mapped/B.sorted.bam mapped/C.sorted.bam | bcftools call -mv - > calls/all.vcf ' returned non-zero exit status 127.
+  File "/home/kbobowik/snakemake-tutorial/SampleAggregation", line 33, in __rule_call
+  File "/usr/local/easybuild/software/Python/3.6.4-intel-2017.u2/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job call since they might be corrupted:
+calls/all.vcf
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/kbobowik/snakemake-tutorial/.snakemake/log/2020-06-15T143805.721631.snakemake.log

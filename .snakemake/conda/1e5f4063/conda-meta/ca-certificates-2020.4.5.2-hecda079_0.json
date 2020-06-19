@@ -1,0 +1,47 @@
+{
+  "build": "hecda079_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/kbobowik/.conda/pkgs/ca-certificates-2020.4.5.2-hecda079_0",
+  "features": "",
+  "files": [
+    "ssl/cacert.pem",
+    "ssl/cert.pem"
+  ],
+  "fn": "ca-certificates-2020.4.5.2-hecda079_0.tar.bz2",
+  "license": "ISC",
+  "link": {
+    "source": "/home/kbobowik/.conda/pkgs/ca-certificates-2020.4.5.2-hecda079_0",
+    "type": 1
+  },
+  "md5": "22ee912116cf8401d58e105ab48dc6c6",
+  "name": "ca-certificates",
+  "package_tarball_full_path": "/home/kbobowik/.conda/pkgs/ca-certificates-2020.4.5.2-hecda079_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "ssl/cacert.pem",
+        "path_type": "hardlink",
+        "sha256": "870068ef78059c5d012a23f715029f1b7db19060e1c65e12c024221f6ac32abd",
+        "sha256_in_prefix": "870068ef78059c5d012a23f715029f1b7db19060e1c65e12c024221f6ac32abd",
+        "size_in_bytes": 284099
+      },
+      {
+        "_path": "ssl/cert.pem",
+        "path_type": "softlink",
+        "sha256": "870068ef78059c5d012a23f715029f1b7db19060e1c65e12c024221f6ac32abd",
+        "size_in_bytes": 284099
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 150025,
+  "subdir": "linux-64",
+  "timestamp": 1591548214161,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2020.4.5.2-hecda079_0.tar.bz2",
+  "version": "2020.4.5.2"
+}

@@ -1,0 +1,11 @@
+prefix=/home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79
+exec_prefix=/home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79
+libdir=/home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79/lib
+includedir=/home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.5
+Libs: -L/home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79/lib -lgsl ${GSL_CBLAS_LIB} -lm -lcblas -lm
+Cflags: -I/home/kbobowik/snakemake-tutorial/.snakemake/conda/e306fa79/include

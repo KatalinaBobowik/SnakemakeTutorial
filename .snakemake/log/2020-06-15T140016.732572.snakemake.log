@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Creating conda environment envs/mapping.yaml...
+Downloading remote packages.
+Environment for envs/mapping.yaml created (location: .snakemake/conda/1e5f4063)
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	sort
+	1
+
+[Mon Jun 15 14:00:40 2020]
+rule sort:
+    input: mapped/A.bam
+    output: mapped/A.sorted.bam
+    jobid: 0
+    wildcards: sample=A
+
+Activating conda environment: /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063
+[Mon Jun 15 14:00:40 2020]
+Error in rule sort:
+    jobid: 0
+    output: mapped/A.sorted.bam
+    conda-env: /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063
+
+RuleException:
+CalledProcessError in line 20 of /home/kbobowik/snakemake-tutorial/SortingReads:
+Command 'source activate /home/kbobowik/snakemake-tutorial/.snakemake/conda/1e5f4063; set -euo pipefail;  samtools sort –o mapped/A.sorted.bam mapped/A.bam ' returned non-zero exit status 1.
+  File "/home/kbobowik/snakemake-tutorial/SortingReads", line 20, in __rule_sort
+  File "/usr/local/easybuild/software/Python/3.6.4-intel-2017.u2/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/kbobowik/snakemake-tutorial/.snakemake/log/2020-06-15T140016.732572.snakemake.log

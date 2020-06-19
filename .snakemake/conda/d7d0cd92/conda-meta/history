@@ -1,0 +1,25 @@
+==> 2020-06-15 13:54:10 <==
+# cmd: /usr/local/easybuild/software/Miniconda3/4.6.14/bin/conda-env create --file /home/kbobowik/snakemake-tutorial/.snakemake/conda/d7d0cd92.yaml --prefix /home/kbobowik/snakemake-tutorial/.snakemake/conda/d7d0cd92
+# conda version: 4.6.14
++bioconda::bwa-0.7.17-hed695b0_7
++bioconda::samtools-1.7-2
++conda-forge::_libgcc_mutex-0.1-conda_forge
++conda-forge::_openmp_mutex-4.5-0_gnu
++conda-forge::bzip2-1.0.8-h516909a_2
++conda-forge::ca-certificates-2020.4.5.2-hecda079_0
++conda-forge::curl-7.69.1-h33f0ec9_0
++conda-forge::krb5-1.17.1-h2fd8d38_0
++conda-forge::libcurl-7.69.1-hf7181ac_0
++conda-forge::libedit-3.1.20170329-0
++conda-forge::libgcc-7.2.0-h69d50b8_2
++conda-forge::libgcc-ng-9.2.0-h24d8f2e_2
++conda-forge::libgomp-9.2.0-h24d8f2e_2
++conda-forge::libssh2-1.9.0-hab1572f_2
++conda-forge::libstdcxx-ng-9.2.0-hdf63c60_2
++conda-forge::ncurses-5.9-10
++conda-forge::openssl-1.1.1g-h516909a_0
++conda-forge::perl-5.26.2-h516909a_1006
++conda-forge::tk-8.6.10-hed695b0_0
++conda-forge::xz-5.2.5-h516909a_0
++conda-forge::zlib-1.2.11-h516909a_1006
+# update specs: ['bwa=0.7.17', 'samtools=1.7']

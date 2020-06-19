@@ -1,0 +1,9 @@
+Building DAG of jobs...
+Creating conda environment envs/mapping.yaml...
+Downloading remote packages.
+CreateCondaEnvironmentException:
+Could not create conda environment from /home/kbobowik/snakemake-tutorial/envs/mapping.yaml:
+
+CondaValueError: invalid package specification: =
+
+

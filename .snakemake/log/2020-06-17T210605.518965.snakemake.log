@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	map_reads
+	1
+
+[Wed Jun 17 21:06:05 2020]
+rule map_reads:
+    input: data/genome.fa, data/samples/A.fastq
+    output: mapped/A.bam
+    jobid: 0
+
+[Wed Jun 17 21:06:05 2020]
+Error in rule map_reads:
+    jobid: 0
+    output: mapped/A.bam
+
+RuleException:
+CalledProcessError in line 8 of /home/kbobowik/snakemake-tutorial/MappingReads:
+Command ' set -euo pipefail;  bwa mem data/genome.fa data/samples/A.fastq | samtools view -Sb - > mapped/A.bam ' returned non-zero exit status 127.
+  File "/home/kbobowik/snakemake-tutorial/MappingReads", line 8, in __rule_map_reads
+  File "/usr/local/easybuild/software/Python/3.6.4-intel-2017.u2/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job map_reads since they might be corrupted:
+mapped/A.bam
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/kbobowik/snakemake-tutorial/.snakemake/log/2020-06-17T210605.518965.snakemake.log
